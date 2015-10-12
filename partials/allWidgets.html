@@ -1,0 +1,29 @@
+<div>
+Failed Login!
+<h1> You can Try Widget Demos</h1>
+<div>
+<button ng-click="loadEmpData()">Click to Load Employee Data </button>
+<div ng-repeat="emp in employees">
+	<div>
+	<li><label>{{emp.firstName}}</label><span> </span><label>{{emp.lastName}}</label></li>
+	</div>
+</div>
+</div>
+<form name="widgetForm">
+
+<div>
+
+</div>
+<hr/>
+<br/><br/><br/>
+<div>
+Upload file Using JavaScript Method.
+		<input type="file" id="file"/><button ng-click="uploadFileUsingJS()">Upload File</button>
+</div>
+<br/><br/><br/>
+<hr/>
+<div>
+Upload file Using AngularJS Method.
+		<input type="file" file-model="myFile"/><button ng-click="uploadFileUsingAngularJS()">Upload File</button>
+</div>
+</form>
